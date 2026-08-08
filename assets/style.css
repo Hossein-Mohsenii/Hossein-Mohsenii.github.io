@@ -1,0 +1,360 @@
+/* ---- Tokens ---- */
+:root{
+  --bg:        #F5F4EF;
+  --ink:       #1E231F;
+  --muted:     #6E7268;
+  --line:      #DCDACF;
+  --accent:    #47573E;
+  --accent-soft: #EDEFE6;
+  --paper:     #FCFBF8;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --maxw: 760px;
+}
+
+*{ box-sizing: border-box; }
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+a{ color: inherit; }
+
+/* ---- Header ---- */
+.site-header{
+  position: sticky;
+  top: 0;
+  background: rgba(245,244,239,0.88);
+  backdrop-filter: saturate(140%) blur(6px);
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.brand{
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+}
+
+.lang-toggle{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+}
+
+.lang-sep{ color: var(--line); }
+
+.lang-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  padding: 4px 2px;
+  position: relative;
+}
+
+.lang-btn.is-active{
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.lang-btn.is-active::after{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -3px;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* ---- Hero ---- */
+.hero{
+  padding-top: 92px;
+  padding-bottom: 64px;
+}
+
+.eyebrow{
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.74rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.name{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  line-height: 1.05;
+  margin: 0 0 10px;
+}
+
+.role{
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0 0 26px;
+}
+
+.bio{
+  max-width: 56ch;
+  margin: 0 0 30px;
+  font-size: 1.02rem;
+}
+
+.hero-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.hero-link{
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: border-color 0.15s ease;
+}
+
+.hero-link:hover{
+  border-color: var(--accent);
+}
+
+/* ---- Sections ---- */
+.section{
+  padding: 52px 28px;
+  border-top: 1px solid var(--line);
+}
+
+.section-title{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 0 34px;
+}
+
+/* ---- Timeline / entries ---- */
+.timeline{
+  position: relative;
+  padding-left: 24px;
+  border-left: 1px solid var(--line);
+}
+
+.timeline .entry{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline .entry:last-child{ margin-bottom: 0; }
+
+.timeline .entry::before{
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+#education .entry{ padding-left: 0; }
+
+.entry-head h3{
+  font-family: var(--font-display);
+  font-size: 1.14rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.entry-meta{
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.entry-meta .dot{ margin: 0 6px; }
+
+.entry-list{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.entry-list li{
+  margin-bottom: 8px;
+  font-size: 0.96rem;
+}
+
+.entry-list li:last-child{ margin-bottom: 0; }
+
+/* ---- Skills ---- */
+.skill-groups{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 44px;
+}
+
+.skill-group{
+  flex: 1 1 200px;
+}
+
+.skill-group h3{
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.tags{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags li{
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.82rem;
+  padding: 5px 11px;
+  border-radius: 3px;
+}
+
+.languages h3{
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.lang-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 360px;
+}
+
+.lang-list li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.94rem;
+}
+
+.lang-list li:last-child{ border-bottom: none; }
+
+.lang-level{ color: var(--muted); }
+
+/* ---- Contact ---- */
+.contact-line{
+  color: var(--muted);
+  margin: 0 0 28px;
+  max-width: 50ch;
+}
+
+.contact-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.contact-card{
+  flex: 1 1 190px;
+}
+
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-card:hover{
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-label{
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.contact-value{
+  font-size: 0.92rem;
+  word-break: break-word;
+}
+
+/* ---- Footer ---- */
+.site-footer{
+  padding: 30px 28px 60px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px){
+  .skill-groups{ grid-template-columns: 1fr; }
+  .contact-cards{ grid-template-columns: 1fr; }
+  .hero{ padding-top: 64px; padding-bottom: 48px; }
+  .section{ padding: 40px 20px; }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .contact-card{ transition: none; }
+}
+
+/* ---- Focus visibility ---- */
+a:focus-visible,
+button:focus-visible{
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
