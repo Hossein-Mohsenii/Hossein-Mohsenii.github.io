@@ -1,18 +1,30 @@
-// ---- Translations ----
+// ================= Translations =================
 const translations = {
   de: {
-    "hero.eyebrow": "Portfolio",
+    "hero.eyebrow": "— Portfolio",
     "hero.role": "Student der Cognitive Science, TU Darmstadt",
-    "hero.bio": "Student der Cognitive Science an der TU Darmstadt mit Grundlagen in Softwareentwicklung, Machine Learning und Datenanalyse. Verbindet analytisches Denken mit Kommunikationsstärke, gewonnen durch kundenorientierte Praxis im Einzelhandel und freiberuflichen Deutschunterricht.",
+    "hero.bio": "Student der Cognitive Science an der TU Darmstadt mit Grundlagen in Softwareentwicklung, Machine Learning und Datenanalyse. Verbindet analytisches Denken mit Kommunikationsstärke.",
+    "hero.cta": "Kontakt aufnehmen",
 
-    "experience.title": "Berufserfahrung",
+    "tabs.about": "Über mich",
+    "tabs.experience": "Erfahrung",
+    "tabs.education": "Ausbildung",
+    "tabs.skills": "Kenntnisse",
+    "tabs.contact": "Kontakt",
+
+    "about.p1": "Cognitive Science verbindet für mich Informatik, Psychologie und Neurowissenschaften — genau diese Mischung aus analytischem Denken und Verständnis für Menschen bringe ich in jedes Projekt ein.",
+    "about.f1l": "Standort",
+    "about.f2l": "Studium",
+    "about.f2v": "B.Sc. Cognitive Science",
+    "about.f3l": "Hochschule",
+    "about.f4l": "Fokus",
+    "about.f4v": "Software & Kognition",
 
     "exp1.title": "Retail Sales Manager",
-    "exp1.org": "L'Occitane en Provence · Werkstudium",
-    "exp1.date": "2023 – Heute · Frankfurt am Main",
-    "exp1.b1": "Beratung und Betreuung von Kund:innen im Verkaufsbereich sowie aktive Umsatzverantwortung",
-    "exp1.b2": "Mitverantwortung für Warenpräsentation, Bestandspflege und Umsetzung von Verkaufszielen",
-    "exp1.b3": "Einsatz kommunikativer Fähigkeiten in einem internationalen, kundenorientierten Umfeld",
+    "exp1.org": "L'Occitane en Provence · Werkstudium · Frankfurt am Main",
+    "exp1.date": "2023 – Heute",
+    "exp1.b1": "Schwerpunkt auf eigenverantwortliches Arbeiten – von der Kundenberatung über die Warenpräsentation bis zur Bestandspflege",
+    "exp1.b2": "Verbindung kommunikativer Stärke mit der aktiven Verfolgung von Umsatzzielen in einem internationalen, kundenorientierten Umfeld",
 
     "exp2.title": "Private German Teacher (A1–B2)",
     "exp2.org": "Freelance",
@@ -21,47 +33,59 @@ const translations = {
     "exp2.b2": "Schwerpunkte: Sprechen, Grammatik, Wortschatz, Hörverständnis und Alltagskommunikation",
     "exp2.b3": "Individuelle Anpassung der Lehrmethode an die Bedürfnisse und den Lernfortschritt der Lernenden",
 
-    "education.title": "Ausbildung",
     "edu1.title": "Bachelor of Science – Cognitive Science",
-    "edu1.org": "Technische Universität Darmstadt",
     "edu1.date": "2022 – Heute",
     "edu1.b1": "Interdisziplinäres Studium an der Schnittstelle von Informatik, Psychologie und Neurowissenschaften",
     "edu1.b2": "Schwerpunkte u. a. in Machine Learning, Datenanalyse, Software Engineering und experimenteller Forschungsmethodik",
 
-    "skills.title": "Kenntnisse",
     "skills.g1": "Programmiersprachen",
     "skills.g2": "Methoden & Tools",
     "skills.g3": "Kognitionswissenschaft",
     "skills.langTitle": "Sprachen",
 
-    "lang.fa": "Persisch",
-    "lang.faLevel": "Muttersprache",
     "lang.de": "Deutsch",
     "lang.deLevel": "Verhandlungssicher",
     "lang.en": "Englisch",
     "lang.enLevel": "Fließend (B2)",
+    "lang.tr": "Türkisch",
+    "lang.trLevel": "Muttersprache",
+    "lang.fa": "Persisch",
+    "lang.faLevel": "Muttersprache",
 
-    "contact.title": "Kontakt",
     "contact.line": "Interessiert an einem Austausch? Schreib mir gerne.",
     "contact.email": "E-Mail",
     "contact.phone": "Telefon",
+    "contact.copy": "Klicken zum Kopieren",
+    "contact.copied": "Kopiert!",
 
     "footer.text": "© {year} Hossein Mohseni",
   },
 
   en: {
-    "hero.eyebrow": "Portfolio",
+    "hero.eyebrow": "— Portfolio",
     "hero.role": "Cognitive Science Student, TU Darmstadt",
-    "hero.bio": "Cognitive Science student at TU Darmstadt with a foundation in software development, machine learning, and data analysis. Combines analytical thinking with strong communication skills, gained through customer-facing retail work and freelance German teaching.",
+    "hero.bio": "Cognitive Science student at TU Darmstadt with a foundation in software development, machine learning, and data analysis. Combines analytical thinking with strong communication skills.",
+    "hero.cta": "Get in touch",
 
-    "experience.title": "Experience",
+    "tabs.about": "About",
+    "tabs.experience": "Experience",
+    "tabs.education": "Education",
+    "tabs.skills": "Skills",
+    "tabs.contact": "Contact",
+
+    "about.p1": "Cognitive Science, to me, is where computer science, psychology, and neuroscience meet — that mix of analytical thinking and understanding people is what I bring to every project.",
+    "about.f1l": "Location",
+    "about.f2l": "Studies",
+    "about.f2v": "B.Sc. Cognitive Science",
+    "about.f3l": "University",
+    "about.f4l": "Focus",
+    "about.f4v": "Software & Cognition",
 
     "exp1.title": "Retail Sales Manager",
-    "exp1.org": "L'Occitane en Provence · Working Student",
-    "exp1.date": "2023 – Present · Frankfurt am Main",
-    "exp1.b1": "Advised and supported customers in a sales environment with active revenue responsibility",
-    "exp1.b2": "Co-responsible for merchandising, inventory upkeep, and achieving sales targets",
-    "exp1.b3": "Applied strong communication skills in an international, customer-focused environment",
+    "exp1.org": "L'Occitane en Provence · Working Student · Frankfurt am Main",
+    "exp1.date": "2023 – Present",
+    "exp1.b1": "Focus on taking ownership – from customer advice to merchandising and inventory upkeep",
+    "exp1.b2": "Combined strong communication skills with active pursuit of sales targets in an international, customer-focused environment",
 
     "exp2.title": "Private German Teacher (A1–B2)",
     "exp2.org": "Freelance",
@@ -70,90 +94,214 @@ const translations = {
     "exp2.b2": "Focus areas: speaking, grammar, vocabulary, listening, and everyday communication",
     "exp2.b3": "Adapted teaching methods individually to each learner's needs and progress",
 
-    "education.title": "Education",
     "edu1.title": "Bachelor of Science – Cognitive Science",
-    "edu1.org": "Technische Universität Darmstadt",
     "edu1.date": "2022 – Present",
     "edu1.b1": "Interdisciplinary studies at the intersection of computer science, psychology, and neuroscience",
     "edu1.b2": "Focus areas include machine learning, data analysis, software engineering, and experimental research methods",
 
-    "skills.title": "Skills",
     "skills.g1": "Programming Languages",
     "skills.g2": "Methods & Tools",
     "skills.g3": "Cognitive Science",
     "skills.langTitle": "Languages",
 
-    "lang.fa": "Persian",
-    "lang.faLevel": "Native",
     "lang.de": "German",
     "lang.deLevel": "Fluent (Business)",
     "lang.en": "English",
     "lang.enLevel": "Fluent (B2)",
+    "lang.tr": "Turkish",
+    "lang.trLevel": "Native",
+    "lang.fa": "Persian",
+    "lang.faLevel": "Native",
 
-    "contact.title": "Contact",
     "contact.line": "Interested in connecting? Feel free to reach out.",
     "contact.email": "Email",
     "contact.phone": "Phone",
+    "contact.copy": "Click to copy",
+    "contact.copied": "Copied!",
 
     "footer.text": "© {year} Hossein Mohseni",
   },
 };
 
-// ---- Apply language ----
+let currentLang = "de";
+
+// ================= i18n =================
 function applyLanguage(lang) {
   const dict = translations[lang] || translations.de;
   const year = new Date().getFullYear();
+  currentLang = lang;
 
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
+  const nodes = document.querySelectorAll("[data-i18n]");
+  for (let i = 0; i < nodes.length; i++) {
+    const el = nodes[i];
     const key = el.getAttribute("data-i18n");
     let value = dict[key];
-    if (value === undefined) return;
+    if (value === undefined) continue;
     value = value.replace("{year}", year);
     el.textContent = value;
-  });
+  }
 
   document.documentElement.setAttribute("lang", lang);
 
-  document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-    btn.classList.toggle("is-active", btn.getAttribute("data-lang-btn") === lang);
-  });
-
-  try {
-    localStorage.setItem("preferredLang", lang);
-  } catch (e) {
-    /* localStorage unavailable — ignore */
-  }
-}
-
-// ---- Init ----
-(function init() {
-  let initialLang = "de";
-
-  let paramLang = null;
-  try {
-    paramLang = new URLSearchParams(window.location.search).get("lang");
-  } catch (e) { /* ignore */ }
-
-  if (paramLang === "de" || paramLang === "en") {
-    initialLang = paramLang;
-  } else {
-    let saved = null;
-    try {
-      saved = localStorage.getItem("preferredLang");
-    } catch (e) { /* localStorage unavailable */ }
-
-    if (saved === "de" || saved === "en") {
-      initialLang = saved;
-    } else if (navigator.language && navigator.language.toLowerCase().startsWith("en")) {
-      initialLang = "en";
+  const langBtns = document.querySelectorAll("[data-lang-btn]");
+  for (let i = 0; i < langBtns.length; i++) {
+    const btn = langBtns[i];
+    if (btn.getAttribute("data-lang-btn") === lang) {
+      btn.classList.add("is-active");
+    } else {
+      btn.classList.remove("is-active");
     }
   }
 
-  applyLanguage(initialLang);
+  try { localStorage.setItem("preferredLang", lang); } catch (e) {}
+}
 
-  document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      applyLanguage(btn.getAttribute("data-lang-btn"));
+function initLanguage() {
+  let initial = "de";
+  let saved = null;
+  try { saved = localStorage.getItem("preferredLang"); } catch (e) {}
+
+  if (saved === "de" || saved === "en") {
+    initial = saved;
+  } else if (navigator.language && navigator.language.toLowerCase().indexOf("en") === 0) {
+    initial = "en";
+  }
+
+  applyLanguage(initial);
+
+  const langBtns = document.querySelectorAll("[data-lang-btn]");
+  for (let i = 0; i < langBtns.length; i++) {
+    langBtns[i].addEventListener("click", function () {
+      applyLanguage(this.getAttribute("data-lang-btn"));
     });
+  }
+}
+
+// ================= Theme =================
+function initTheme() {
+  let saved = null;
+  try { saved = localStorage.getItem("preferredTheme"); } catch (e) {}
+
+  const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  const initial = saved || (prefersLight ? "light" : "dark");
+  document.documentElement.setAttribute("data-theme", initial);
+
+  const toggle = document.getElementById("themeToggle");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", function () {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("preferredTheme", next); } catch (e) {}
   });
-})();
+}
+
+// ================= Tabs =================
+function initTabs() {
+  const tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  const panels = Array.prototype.slice.call(document.querySelectorAll(".tab-panel"));
+  const indicator = document.getElementById("tabIndicator");
+  const tabbar = document.querySelector(".tabbar");
+
+  function moveIndicator(tab) {
+    if (!indicator || !tab || !tabbar) return;
+    const tabRect = tab.getBoundingClientRect();
+    const barRect = tabbar.getBoundingClientRect();
+    indicator.style.left = (tabRect.left - barRect.left) + "px";
+    indicator.style.width = tabRect.width + "px";
+  }
+
+  function activate(name, tab) {
+    for (let i = 0; i < tabs.length; i++) {
+      const isMatch = tabs[i].getAttribute("data-tab") === name;
+      tabs[i].classList.toggle("is-active", isMatch);
+      tabs[i].setAttribute("aria-selected", isMatch ? "true" : "false");
+    }
+    for (let i = 0; i < panels.length; i++) {
+      panels[i].classList.toggle("is-active", panels[i].getAttribute("data-panel") === name);
+    }
+    moveIndicator(tab);
+    try { localStorage.setItem("preferredTab", name); } catch (e) {}
+  }
+
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", function () {
+      activate(this.getAttribute("data-tab"), this);
+    });
+  }
+
+  let startTab = tabs[0];
+  let startName = startTab ? startTab.getAttribute("data-tab") : null;
+  try {
+    const saved = localStorage.getItem("preferredTab");
+    if (saved) {
+      const match = tabs.filter(function (t) { return t.getAttribute("data-tab") === saved; })[0];
+      if (match) { startTab = match; startName = saved; }
+    }
+  } catch (e) {}
+
+  if (startTab) activate(startName, startTab);
+
+  window.addEventListener("resize", function () {
+    const active = document.querySelector(".tab.is-active");
+    if (active) moveIndicator(active);
+  });
+}
+
+// ================= Copy to clipboard =================
+function initCopy() {
+  const toast = document.getElementById("toast");
+  let toastTimer = null;
+
+  function showToast(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("is-visible");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toast.classList.remove("is-visible");
+    }, 1800);
+  }
+
+  const copyButtons = document.querySelectorAll("[data-copy]");
+  for (let i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener("click", function () {
+      const value = this.getAttribute("data-copy");
+      const dict = translations[currentLang] || translations.de;
+
+      function done() {
+        showToast(dict["contact.copied"] || "Copied!");
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(value).then(done).catch(function () {
+          fallbackCopy(value);
+          done();
+        });
+      } else {
+        fallbackCopy(value);
+        done();
+      }
+    });
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+}
+
+// ================= Init =================
+document.addEventListener("DOMContentLoaded", function () {
+  initTheme();
+  initLanguage();
+  initTabs();
+  initCopy();
+});
