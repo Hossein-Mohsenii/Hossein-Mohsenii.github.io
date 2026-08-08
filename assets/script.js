@@ -12,7 +12,7 @@ const translations = {
     "tabs.skills": "Kenntnisse",
     "tabs.contact": "Kontakt",
 
-    "about.p1": "Cognitive Science verbindet für mich Philosophie des Geistes, Informatik und Psychologie — genau diese Mischung aus konzeptionellem und analytischem Denken sowie Verständnis für Menschen bringe ich in jedes Projekt ein.",
+    "about.p1": "Cognitive Science verbindet für mich Philosophie des Geistes, Informatik und Neurologie — genau diese Mischung aus konzeptionellem und analytischem Denken sowie Verständnis für Menschen bringe ich in jedes Projekt ein.",
     "about.f1l": "Standort",
     "about.f2l": "Studium",
     "about.f2v": "B.Sc. Cognitive Science",
@@ -73,7 +73,7 @@ const translations = {
     "tabs.skills": "Skills",
     "tabs.contact": "Contact",
 
-    "about.p1": "Cognitive Science, to me, is where philosophy of mind, computer science, and psychology meet — that mix of conceptual and analytical thinking and understanding people is what I bring to every project.",
+    "about.p1": "Cognitive Science, to me, is where philosophy of mind, computer science, and neurology meet — that mix of conceptual and analytical thinking and understanding people is what I bring to every project.",
     "about.f1l": "Location",
     "about.f2l": "Studies",
     "about.f2v": "B.Sc. Cognitive Science",
