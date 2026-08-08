@@ -7,153 +7,235 @@
 <meta name="description" content="Hossein Mohseni — Cognitive Science Student, TU Darmstadt">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
+<div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <span class="brand">HM</span>
-    <nav class="lang-toggle" aria-label="Language switch">
-      <button type="button" data-lang-btn="de" class="lang-btn is-active">DE</button>
-      <span class="lang-sep">/</span>
-      <button type="button" data-lang-btn="en" class="lang-btn">EN</button>
-    </nav>
+    <a href="#top" class="brand">HM<span class="brand-dot">.</span></a>
+
+    <div class="header-controls">
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+
+      <div class="lang-toggle" role="group" aria-label="Language switch">
+        <button type="button" data-lang-btn="de" class="lang-btn is-active">DE</button>
+        <button type="button" data-lang-btn="en" class="lang-btn">EN</button>
+      </div>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="top">
 
   <!-- HERO -->
   <section class="hero wrap">
-    <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio</p>
-    <h1 class="name">Hossein Mohseni</h1>
-    <p class="role" data-i18n="hero.role">Student der Cognitive Science, TU Darmstadt</p>
-    <p class="bio" data-i18n="hero.bio">
-      Student der Cognitive Science an der TU Darmstadt mit Grundlagen in Softwareentwicklung,
-      Machine Learning und Datenanalyse. Verbindet analytisches Denken mit Kommunikationsstärke,
-      gewonnen durch kundenorientierte Praxis im Einzelhandel und freiberuflichen Deutschunterricht.
-    </p>
-    <div class="hero-links">
-      <a href="mailto:hosseinmohseni.de@gmail.com" class="hero-link">hosseinmohseni.de@gmail.com</a>
-      <a href="https://www.linkedin.com/in/hossein-mohseni-09367b26b/" class="hero-link" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero.eyebrow">— Portfolio</p>
+      <h1 class="name">Hossein <span class="grad-text">Mohseni</span></h1>
+      <p class="role" data-i18n="hero.role">Student der Cognitive Science, TU Darmstadt</p>
+      <p class="bio" data-i18n="hero.bio">
+        Student der Cognitive Science an der TU Darmstadt mit Grundlagen in Softwareentwicklung,
+        Machine Learning und Datenanalyse. Verbindet analytisches Denken mit Kommunikationsstärke.
+      </p>
+
+      <div class="hero-actions">
+        <a href="mailto:hosseinmohseni.de@gmail.com" class="btn btn-primary">
+          <span data-i18n="hero.cta">Kontakt aufnehmen</span>
+        </a>
+        <a href="https://github.com/Hossein-Mohsenii" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/hossein-mohseni-09367b26b/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <img class="hero-photo" src="assets/hossein_photo.png" alt="Hossein Mohseni" width="360" height="360">
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section wrap" id="experience">
-    <h2 class="section-title" data-i18n="experience.title">Berufserfahrung</h2>
+  <!-- TABS -->
+  <section class="panel wrap">
+    <div class="tabbar" role="tablist" aria-label="Portfolio sections">
+      <button class="tab is-active" role="tab" aria-selected="true" data-tab="about" id="tabbtn-about">
+        <span data-i18n="tabs.about">Über mich</span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="experience" id="tabbtn-experience">
+        <span data-i18n="tabs.experience">Erfahrung</span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="education" id="tabbtn-education">
+        <span data-i18n="tabs.education">Ausbildung</span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="skills" id="tabbtn-skills">
+        <span data-i18n="tabs.skills">Kenntnisse</span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="contact" id="tabbtn-contact">
+        <span data-i18n="tabs.contact">Kontakt</span>
+      </button>
+      <div class="tab-indicator" id="tabIndicator"></div>
+    </div>
 
-    <div class="timeline">
-      <article class="entry">
-        <div class="entry-head">
-          <h3 data-i18n="exp1.title">Retail Sales Manager</h3>
-          <p class="entry-meta">
-            <span data-i18n="exp1.org">L'Occitane en Provence · Werkstudium</span>
-            <span class="dot">·</span>
-            <span data-i18n="exp1.date">2023 – Heute · Frankfurt am Main</span>
+    <div class="tab-panels">
+
+      <!-- ABOUT -->
+      <div class="tab-panel is-active" role="tabpanel" data-panel="about" id="panel-about">
+        <div class="card card-lg">
+          <p class="lead" data-i18n="about.p1">
+            Cognitive Science verbindet für mich Informatik, Psychologie und Neurowissenschaften —
+            genau diese Mischung aus analytischem Denken und Verständnis für Menschen bringe ich in
+            jedes Projekt ein.
           </p>
+          <div class="fact-grid">
+            <div class="fact">
+              <span class="fact-label" data-i18n="about.f1l">Standort</span>
+              <span class="fact-value">Darmstadt, Hessen</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label" data-i18n="about.f2l">Studium</span>
+              <span class="fact-value" data-i18n="about.f2v">B.Sc. Cognitive Science</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label" data-i18n="about.f3l">Hochschule</span>
+              <span class="fact-value">TU Darmstadt</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label" data-i18n="about.f4l">Fokus</span>
+              <span class="fact-value" data-i18n="about.f4v">Software &amp; Kognition</span>
+            </div>
+          </div>
         </div>
-        <ul class="entry-list">
-          <li data-i18n="exp1.b1">Beratung und Betreuung von Kund:innen im Verkaufsbereich sowie aktive Umsatzverantwortung</li>
-          <li data-i18n="exp1.b2">Mitverantwortung für Warenpräsentation, Bestandspflege und Umsetzung von Verkaufszielen</li>
-          <li data-i18n="exp1.b3">Einsatz kommunikativer Fähigkeiten in einem internationalen, kundenorientierten Umfeld</li>
-        </ul>
-      </article>
+      </div>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3 data-i18n="exp2.title">Private German Teacher (A1–B2)</h3>
-          <p class="entry-meta">
-            <span data-i18n="exp2.org">Freelance</span>
-            <span class="dot">·</span>
-            <span data-i18n="exp2.date">2021 – Heute</span>
-          </p>
+      <!-- EXPERIENCE -->
+      <div class="tab-panel" role="tabpanel" data-panel="experience" id="panel-experience">
+        <div class="timeline">
+          <article class="card entry-card">
+            <div class="entry-top">
+              <h3 data-i18n="exp1.title">Retail Sales Manager</h3>
+              <span class="badge" data-i18n="exp1.date">2023 – Heute</span>
+            </div>
+            <p class="entry-org" data-i18n="exp1.org">L'Occitane en Provence · Werkstudium · Frankfurt am Main</p>
+            <ul class="entry-list">
+              <li data-i18n="exp1.b1">Beratung und Betreuung von Kund:innen im Verkaufsbereich sowie aktive Umsatzverantwortung</li>
+              <li data-i18n="exp1.b2">Mitverantwortung für Warenpräsentation, Bestandspflege und Umsetzung von Verkaufszielen</li>
+              <li data-i18n="exp1.b3">Einsatz kommunikativer Fähigkeiten in einem internationalen, kundenorientierten Umfeld</li>
+            </ul>
+          </article>
+
+          <article class="card entry-card">
+            <div class="entry-top">
+              <h3 data-i18n="exp2.title">Private German Teacher (A1–B2)</h3>
+              <span class="badge" data-i18n="exp2.date">2021 – Heute</span>
+            </div>
+            <p class="entry-org" data-i18n="exp2.org">Freelance</p>
+            <ul class="entry-list">
+              <li data-i18n="exp2.b1">Erteilung von privatem Deutschunterricht für Lernende auf den Niveaustufen A1 bis B2</li>
+              <li data-i18n="exp2.b2">Schwerpunkte: Sprechen, Grammatik, Wortschatz, Hörverständnis und Alltagskommunikation</li>
+              <li data-i18n="exp2.b3">Individuelle Anpassung der Lehrmethode an die Bedürfnisse und den Lernfortschritt der Lernenden</li>
+            </ul>
+          </article>
         </div>
-        <ul class="entry-list">
-          <li data-i18n="exp2.b1">Erteilung von privatem Deutschunterricht für Lernende auf den Niveaustufen A1 bis B2</li>
-          <li data-i18n="exp2.b2">Schwerpunkte: Sprechen, Grammatik, Wortschatz, Hörverständnis und Alltagskommunikation</li>
-          <li data-i18n="exp2.b3">Individuelle Anpassung der Lehrmethode an die Bedürfnisse und den Lernfortschritt der Lernenden</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section wrap" id="education">
-    <h2 class="section-title" data-i18n="education.title">Ausbildung</h2>
-    <article class="entry">
-      <div class="entry-head">
-        <h3 data-i18n="edu1.title">Bachelor of Science – Cognitive Science</h3>
-        <p class="entry-meta">
-          <span data-i18n="edu1.org">Technische Universität Darmstadt</span>
-          <span class="dot">·</span>
-          <span data-i18n="edu1.date">2022 – Heute</span>
-        </p>
       </div>
-      <ul class="entry-list">
-        <li data-i18n="edu1.b1">Interdisziplinäres Studium an der Schnittstelle von Informatik, Psychologie und Neurowissenschaften</li>
-        <li data-i18n="edu1.b2">Schwerpunkte u. a. in Machine Learning, Datenanalyse, Software Engineering und experimenteller Forschungsmethodik</li>
-      </ul>
-    </article>
-  </section>
 
-  <!-- SKILLS -->
-  <section class="section wrap" id="skills">
-    <h2 class="section-title" data-i18n="skills.title">Kenntnisse</h2>
-
-    <div class="skill-groups">
-      <div class="skill-group">
-        <h3 data-i18n="skills.g1">Programmiersprachen</h3>
-        <ul class="tags">
-          <li>Java</li><li>Python</li><li>JavaScript</li><li>C++</li>
-        </ul>
+      <!-- EDUCATION -->
+      <div class="tab-panel" role="tabpanel" data-panel="education" id="panel-education">
+        <div class="timeline">
+          <article class="card entry-card">
+            <div class="entry-top">
+              <h3 data-i18n="edu1.title">Bachelor of Science – Cognitive Science</h3>
+              <span class="badge" data-i18n="edu1.date">2022 – Heute</span>
+            </div>
+            <p class="entry-org">Technische Universität Darmstadt</p>
+            <ul class="entry-list">
+              <li data-i18n="edu1.b1">Interdisziplinäres Studium an der Schnittstelle von Informatik, Psychologie und Neurowissenschaften</li>
+              <li data-i18n="edu1.b2">Schwerpunkte u. a. in Machine Learning, Datenanalyse, Software Engineering und experimenteller Forschungsmethodik</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <div class="skill-group">
-        <h3 data-i18n="skills.g2">Methoden &amp; Tools</h3>
-        <ul class="tags">
-          <li>Machine Learning</li><li>Data Analysis</li><li>Jupyter</li>
-          <li>OOP</li><li>SOA</li><li>SOAP</li><li>Git</li>
-          <li>Azure DevOps</li><li>JIRA</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 data-i18n="skills.g3">Kognitionswissenschaft</h3>
-        <ul class="tags">
-          <li>Psychology</li><li>Behavior Analysis</li><li>Experimental Design</li>
-          <li>Research Methods</li><li>Scientific Writing</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="languages">
-      <h3 data-i18n="skills.langTitle">Sprachen</h3>
-      <ul class="lang-list">
-        <li><span data-i18n="lang.fa">Persisch</span><span class="lang-level" data-i18n="lang.faLevel">Muttersprache</span></li>
-        <li><span data-i18n="lang.de">Deutsch</span><span class="lang-level" data-i18n="lang.deLevel">Verhandlungssicher</span></li>
-        <li><span data-i18n="lang.en">Englisch</span><span class="lang-level" data-i18n="lang.enLevel">Fließend (B2)</span></li>
-      </ul>
-    </div>
-  </section>
+      <!-- SKILLS -->
+      <div class="tab-panel" role="tabpanel" data-panel="skills" id="panel-skills">
+        <div class="skills-grid">
+          <div class="card">
+            <h3 class="card-title" data-i18n="skills.g1">Programmiersprachen</h3>
+            <ul class="tags">
+              <li>Java</li><li>Python</li><li>JavaScript</li><li>C++</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title" data-i18n="skills.g2">Methoden &amp; Tools</h3>
+            <ul class="tags">
+              <li>Machine Learning</li><li>Data Analysis</li><li>Jupyter</li>
+              <li>OOP</li><li>SOA</li><li>SOAP</li><li>Git</li>
+              <li>Azure DevOps</li><li>JIRA</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title" data-i18n="skills.g3">Kognitionswissenschaft</h3>
+            <ul class="tags">
+              <li>Psychology</li><li>Behavior Analysis</li><li>Experimental Design</li>
+              <li>Research Methods</li><li>Scientific Writing</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title" data-i18n="skills.langTitle">Sprachen</h3>
+            <ul class="lang-list">
+              <li>
+                <span data-i18n="lang.fa">Persisch</span>
+                <div class="lang-bar"><div class="lang-bar-fill" style="width:100%"></div></div>
+                <span class="lang-level" data-i18n="lang.faLevel">Muttersprache</span>
+              </li>
+              <li>
+                <span data-i18n="lang.de">Deutsch</span>
+                <div class="lang-bar"><div class="lang-bar-fill" style="width:92%"></div></div>
+                <span class="lang-level" data-i18n="lang.deLevel">Verhandlungssicher</span>
+              </li>
+              <li>
+                <span data-i18n="lang.en">Englisch</span>
+                <div class="lang-bar"><div class="lang-bar-fill" style="width:75%"></div></div>
+                <span class="lang-level" data-i18n="lang.enLevel">Fließend (B2)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-  <!-- CONTACT -->
-  <section class="section wrap" id="contact">
-    <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
-    <p class="contact-line" data-i18n="contact.line">Interessiert an einem Austausch? Schreib mir gerne.</p>
-    <div class="contact-cards">
-      <a class="contact-card" href="mailto:hosseinmohseni.de@gmail.com">
-        <span class="contact-label" data-i18n="contact.email">E-Mail</span>
-        <span class="contact-value">hosseinmohseni.de@gmail.com</span>
-      </a>
-      <a class="contact-card" href="tel:+491630099406">
-        <span class="contact-label" data-i18n="contact.phone">Telefon</span>
-        <span class="contact-value">+49 163 0099406</span>
-      </a>
-      <a class="contact-card" href="https://www.linkedin.com/in/hossein-mohseni-09367b26b/" target="_blank" rel="noopener">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">hossein-mohseni</span>
-      </a>
+      <!-- CONTACT -->
+      <div class="tab-panel" role="tabpanel" data-panel="contact" id="panel-contact">
+        <div class="card card-lg">
+          <p class="lead" data-i18n="contact.line">Interessiert an einem Austausch? Schreib mir gerne.</p>
+          <div class="contact-grid">
+            <button class="contact-card" data-copy="hosseinmohseni.de@gmail.com" type="button">
+              <span class="contact-label" data-i18n="contact.email">E-Mail</span>
+              <span class="contact-value">hosseinmohseni.de@gmail.com</span>
+              <span class="copy-hint" data-i18n="contact.copy">Klicken zum Kopieren</span>
+            </button>
+            <button class="contact-card" data-copy="+49 163 0099406" type="button">
+              <span class="contact-label" data-i18n="contact.phone">Telefon</span>
+              <span class="contact-value">+49 163 0099406</span>
+              <span class="copy-hint" data-i18n="contact.copy">Klicken zum Kopieren</span>
+            </button>
+            <a class="contact-card" href="https://www.linkedin.com/in/hossein-mohseni-09367b26b/" target="_blank" rel="noopener">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">hossein-mohseni</span>
+            </a>
+            <a class="contact-card" href="https://github.com/Hossein-Mohsenii" target="_blank" rel="noopener">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">Hossein-Mohsenii</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -162,6 +244,8 @@
 <footer class="site-footer wrap">
   <p data-i18n="footer.text">© <span id="year"></span> Hossein Mohseni</p>
 </footer>
+
+<div class="toast" id="toast"></div>
 
 <script src="assets/script.js"></script>
 </body>
