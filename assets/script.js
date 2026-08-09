@@ -2,8 +2,8 @@
 const translations = {
   de: {
     "hero.eyebrow": "— Portfolio",
-    "hero.role": "Student der Cognitive Science, TU Darmstadt",
-    "hero.bio": "Student der Cognitive Science an der TU Darmstadt mit Grundlagen in Softwareentwicklung, Machine Learning und Datenanalyse. Verbindet analytisches Denken mit Kommunikationsstärke.",
+    "hero.role": "Den Geist verstehen. Intelligente Systeme gestalten.",
+    "hero.bio": "Student der Cognitive Science an der TU Darmstadt mit einer wissenschaftlichen Grundlage im Bereich menschliche Kognition und einem wachsenden praktischen Fokus auf Software, Daten und künstliche Intelligenz.",
     "hero.cta": "Kontakt aufnehmen",
 
     "tabs.about": "Über mich",
@@ -12,7 +12,9 @@ const translations = {
     "tabs.skills": "Kenntnisse",
     "tabs.contact": "Kontakt",
 
-    "about.p1": "Cognitive Science verbindet für mich Philosophie des Geistes, Informatik und Neurologie — genau diese Mischung aus konzeptionellem und analytischem Denken sowie Verständnis für Menschen bringe ich in jedes Projekt ein.",
+    "about.p1": "Ich bin Student der Cognitive Science an der TU Darmstadt und interessiere mich für Technologie, menschliche Kognition und praxisnahe Problemlösung.",
+    "about.p2": "Mein Studium verbindet kognitive Psychologie, Neurowissenschaften, Linguistik, Philosophie des Geistes, Informatik und künstliche Intelligenz. Das gibt mir eine wissenschaftliche Perspektive auf menschliches Verhalten und intelligente Systeme, während ich praktische Fähigkeiten in Programmierung, Datenanalyse und Machine Learning entwickle.",
+    "about.p3": "Durch kundenorientierte Führungserfahrung habe ich klare Kommunikation, Organisationsfähigkeit, Zuverlässigkeit und einen ruhigen, nutzerorientierten Ansatz zur Problemlösung entwickelt. Diese Stärken bringe ich in jede technische Herausforderung ein.",
     "about.f1l": "Standort",
     "about.f2l": "Studium",
     "about.f2v": "B.Sc. Cognitive Science",
@@ -64,8 +66,8 @@ const translations = {
 
   en: {
     "hero.eyebrow": "— Portfolio",
-    "hero.role": "Cognitive Science Student, TU Darmstadt",
-    "hero.bio": "Cognitive Science student at TU Darmstadt with a foundation in software development, machine learning, and data analysis. Combines analytical thinking with strong communication skills.",
+    "hero.role": "Understanding Minds. Building Intelligent Systems.",
+    "hero.bio": "Cognitive Science student at TU Darmstadt with a scientific foundation in human cognition and a growing practical focus on software, data, and artificial intelligence.",
     "hero.cta": "Get in touch",
 
     "tabs.about": "About",
@@ -74,7 +76,9 @@ const translations = {
     "tabs.skills": "Skills",
     "tabs.contact": "Contact",
 
-    "about.p1": "Cognitive Science, to me, is where philosophy of mind, computer science, and neuroscience meet — that mix of conceptual and analytical thinking and understanding people is what I bring to every project.",
+    "about.p1": "I am a Cognitive Science student at TU Darmstadt interested in technology, human cognition, and practical problem-solving.",
+    "about.p2": "My studies combine cognitive psychology, neuroscience, linguistics, philosophy of mind, computer science, and artificial intelligence. They give me a scientific perspective on human behaviour and intelligent systems, while I develop practical skills in programming, data analysis, and machine learning.",
+    "about.p3": "Through customer-facing management experience, I have developed clear communication, organisation, reliability, and a calm, user-oriented approach to problem-solving. I bring these strengths to every technical challenge I take on.",
     "about.f1l": "Location",
     "about.f2l": "Studies",
     "about.f2v": "B.Sc. Cognitive Science",
