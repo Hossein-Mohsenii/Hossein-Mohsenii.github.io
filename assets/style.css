@@ -521,27 +521,15 @@ html[data-theme="light"] .lang-btn.is-active{ color: #fff; }
 }
 
 .lang-list li{
-  display: grid;
-  grid-template-columns: 80px 1fr auto;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
+  padding: 6px 0;
 }
 
-.lang-bar{
-  height: 6px;
-  border-radius: 999px;
-  background: var(--border);
-  overflow: hidden;
-}
-
-.lang-bar-fill{
-  height: 100%;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-}
-
-.lang-level{ color: var(--text-muted); font-size: 0.8rem; white-space: nowrap; }
+.lang-level{ color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
 
 /* ---- contact ---- */
 .contact-grid{
@@ -628,8 +616,7 @@ html[data-theme="light"] .lang-btn.is-active{ color: #fff; }
   .hero-actions{ justify-content: center; }
   .hero-photo-wrap{ width: 200px; height: 200px; }
   .card-lg{ padding: 24px 20px; }
-  .lang-list li{ grid-template-columns: 70px 1fr; }
-  .lang-level{ grid-column: 1 / -1; }
+  .lang-list li{ flex-wrap: wrap; }
 }
 
 /* ============ Focus ============ */
