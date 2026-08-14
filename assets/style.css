@@ -248,7 +248,7 @@ html[data-theme="dark"] .icon-moon{ display: block; }
   padding-top: 56px;
 }
 
-.index-nav{ position: sticky; top: 96px; align-self: start; }
+.index-nav{ position: sticky; top: 96px; align-self: start; min-width: 0; }
 
 .index-nav ol{
   list-style: none;
@@ -294,6 +294,7 @@ html[data-theme="dark"] .icon-moon{ display: block; }
   flex-direction: column;
   gap: 96px;
   min-width: 0;
+  max-width: 100%;
 }
 
 .content-section{ scroll-margin-top: 96px; }
@@ -468,6 +469,63 @@ html[data-theme="dark"] .icon-moon{ display: block; }
 .lang-list li:first-child{ border-top: none; padding-top: 0; }
 
 .lang-level{ color: var(--text-dim); font-size: 0.85rem; font-style: italic; font-family: var(--font-display); white-space: nowrap; }
+
+/* ---- projects ---- */
+.project-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 32px;
+}
+
+@media (min-width: 560px){
+  .project-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px){
+  .project-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px 24px;
+  background: var(--surface);
+}
+
+.project-card h3{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.12rem;
+  margin: 0;
+}
+
+.project-desc{
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin: 0;
+  flex: 1;
+}
+
+.project-card .tags{ margin: 4px 0 0; }
+
+.project-link{
+  margin-top: 4px;
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.project-link:hover{ border-color: var(--accent); }
 
 /* ---- contact ---- */
 .contact-grid{

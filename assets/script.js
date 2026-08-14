@@ -10,6 +10,7 @@ const translations = {
     "tabs.experience": "Erfahrung",
     "tabs.education": "Ausbildung",
     "tabs.skills": "Kenntnisse",
+    "tabs.projects": "Projekte",
     "tabs.contact": "Kontakt",
 
     "about.p1": "Ich bin Student der Cognitive Science an der TU Darmstadt und interessiere mich für Technologie, menschliche Kognition und praxisnahe Problemlösung.",
@@ -46,6 +47,12 @@ const translations = {
     "skills.g3": "Kognitionswissenschaft",
     "skills.langTitle": "Sprachen",
 
+    "projects.intro": "Eine Auswahl eigener Projekte an der Schnittstelle von Cognitive Science und Softwareentwicklung.",
+    "projects.viewRepo": "Repository ansehen",
+    "proj1.desc": "Analysiert beliebige Texte auf kognitive Verzerrungen und manipulative rhetorische Muster. Erkannte Textstellen werden farbig markiert – mit Kategorie, Erklärung und Schweregrad, basierend auf der Heuristik-Forschung von Kahneman und Tversky.",
+    "proj2.desc": "Interaktive Web-App zu sechs klassischen optischen Täuschungen aus der Wahrnehmungspsychologie. Aus dem Antwortmuster erstellt eine KI-Komponente anschließend ein individuelles, psychologisch fundiertes Wahrnehmungsprofil.",
+    "proj3.desc": "Analysiert einen entwicklungspsychologischen Fall parallel durch fünf zentrale Theorien – von Psychoanalyse bis Vygotsky/Bronfenbrenner – und lässt sie in einem simulierten Streitgespräch gegeneinander antreten.",
+
     "lang.de": "Deutsch",
     "lang.deLevel": "Verhandlungssicher",
     "lang.en": "Englisch",
@@ -74,6 +81,7 @@ const translations = {
     "tabs.experience": "Experience",
     "tabs.education": "Education",
     "tabs.skills": "Skills",
+    "tabs.projects": "Projects",
     "tabs.contact": "Contact",
 
     "about.p1": "I am a Cognitive Science student at TU Darmstadt interested in technology, human cognition, and practical problem-solving.",
@@ -109,6 +117,12 @@ const translations = {
     "skills.g2": "Methods & Tools",
     "skills.g3": "Cognitive Science",
     "skills.langTitle": "Languages",
+
+    "projects.intro": "A selection of personal projects at the intersection of cognitive science and software engineering.",
+    "projects.viewRepo": "View repository",
+    "proj1.desc": "Analyzes any text for cognitive biases and manipulative rhetorical patterns. Detected passages are highlighted with category, explanation, and severity, grounded in Kahneman and Tversky's heuristics research.",
+    "proj2.desc": "Interactive web app covering six classic optical illusions from perceptual psychology. From the answer pattern, an AI component then generates an individual, psychologically grounded perception profile.",
+    "proj3.desc": "Analyzes a developmental-psychology case in parallel through five central theories — from psychoanalysis to Vygotsky/Bronfenbrenner — and pits them against each other in a simulated debate.",
 
     "lang.de": "German",
     "lang.deLevel": "Fluent (Business)",
