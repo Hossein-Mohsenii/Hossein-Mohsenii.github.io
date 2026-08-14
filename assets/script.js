@@ -10,7 +10,7 @@ const translations = {
     "tabs.experience": "Erfahrung",
     "tabs.education": "Ausbildung",
     "tabs.skills": "Kenntnisse",
-    "tabs.projects": "Projekte",
+    "tabs.projects": "Universitätsprojekte",
     "tabs.contact": "Kontakt",
 
     "about.p1": "Ich bin Student der Cognitive Science an der TU Darmstadt und interessiere mich für Technologie, menschliche Kognition und praxisnahe Problemlösung.",
@@ -81,7 +81,7 @@ const translations = {
     "tabs.experience": "Experience",
     "tabs.education": "Education",
     "tabs.skills": "Skills",
-    "tabs.projects": "Projects",
+    "tabs.projects": "University Projects",
     "tabs.contact": "Contact",
 
     "about.p1": "I am a Cognitive Science student at TU Darmstadt interested in technology, human cognition, and practical problem-solving.",
