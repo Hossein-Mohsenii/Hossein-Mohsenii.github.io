@@ -203,56 +203,44 @@ function initTheme() {
   });
 }
 
-// ================= Tabs =================
-function initTabs() {
-  const tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
-  const panels = Array.prototype.slice.call(document.querySelectorAll(".tab-panel"));
-  const indicator = document.getElementById("tabIndicator");
-  const tabbar = document.querySelector(".tabbar");
+// ================= Section scroll-spy =================
+function initScrollSpy() {
+  const navLinks = Array.prototype.slice.call(document.querySelectorAll(".index-nav a"));
+  const sections = Array.prototype.slice.call(document.querySelectorAll(".content-section"));
+  if (!navLinks.length || !sections.length) return;
 
-  function moveIndicator(tab) {
-    if (!indicator || !tab || !tabbar) return;
-    const tabRect = tab.getBoundingClientRect();
-    const barRect = tabbar.getBoundingClientRect();
-    indicator.style.left = (tabRect.left - barRect.left) + "px";
-    indicator.style.width = tabRect.width + "px";
+  function setActive(name) {
+    for (let i = 0; i < navLinks.length; i++) {
+      navLinks[i].classList.toggle("is-active", navLinks[i].getAttribute("data-nav") === name);
+    }
   }
 
-  function activate(name, tab) {
-    for (let i = 0; i < tabs.length; i++) {
-      const isMatch = tabs[i].getAttribute("data-tab") === name;
-      tabs[i].classList.toggle("is-active", isMatch);
-      tabs[i].setAttribute("aria-selected", isMatch ? "true" : "false");
-    }
-    for (let i = 0; i < panels.length; i++) {
-      panels[i].classList.toggle("is-active", panels[i].getAttribute("data-panel") === name);
-    }
-    moveIndicator(tab);
-    try { localStorage.setItem("preferredTab", name); } catch (e) {}
+  if (!("IntersectionObserver" in window)) {
+    setActive(sections[0].getAttribute("data-section"));
+    return;
   }
 
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", function () {
-      activate(this.getAttribute("data-tab"), this);
-    });
+  const observer = new IntersectionObserver(
+    function (entries) {
+      let best = null;
+      for (let i = 0; i < entries.length; i++) {
+        const entry = entries[i];
+        if (entry.isIntersecting) {
+          if (!best || entry.intersectionRatio > best.intersectionRatio) {
+            best = entry;
+          }
+        }
+      }
+      if (best) setActive(best.target.getAttribute("data-section"));
+    },
+    { rootMargin: "-30% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
+  );
+
+  for (let i = 0; i < sections.length; i++) {
+    observer.observe(sections[i]);
   }
 
-  let startTab = tabs[0];
-  let startName = startTab ? startTab.getAttribute("data-tab") : null;
-  try {
-    const saved = localStorage.getItem("preferredTab");
-    if (saved) {
-      const match = tabs.filter(function (t) { return t.getAttribute("data-tab") === saved; })[0];
-      if (match) { startTab = match; startName = saved; }
-    }
-  } catch (e) {}
-
-  if (startTab) activate(startName, startTab);
-
-  window.addEventListener("resize", function () {
-    const active = document.querySelector(".tab.is-active");
-    if (active) moveIndicator(active);
-  });
+  setActive(sections[0].getAttribute("data-section"));
 }
 
 // ================= Copy to clipboard =================
@@ -308,6 +296,6 @@ function initCopy() {
 document.addEventListener("DOMContentLoaded", function () {
   initTheme();
   initLanguage();
-  initTabs();
+  initScrollSpy();
   initCopy();
 });
